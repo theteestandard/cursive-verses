@@ -439,6 +439,14 @@ h1 {
   height: 3em;
 }
 
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+  font-size:1.4rem;
+}
+
+
 @media (max-width: 640px) { 
   body {
     /* increase font-size for iPhones */
