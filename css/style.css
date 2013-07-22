@@ -440,12 +440,17 @@ h1 {
 }
 
 
-@media (-webkit-min-device-pixel-ratio: 2), 
+/*@media (-webkit-min-device-pixel-ratio: 2), 
+only screen and (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) { 
-    /* Retina-specific stuff here */
   font-size:1.4rem;
-}
+}*/
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 1.4rem;
+  }
+}
 
 @media (max-width: 640px) { 
   body {
